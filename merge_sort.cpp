@@ -29,15 +29,11 @@ void merge(int a[], int l, int m, int r)
     }
     while (i < n1)
     {
-        a[k] = L[i];
-        i++;
-        k++;
+        a[k++] = L[i++];
     }
     while (j < n2)
     {
-        a[k] = R[j];
-        j++;
-        k++;
+        a[k++] = R[j++];
     }
 }
 void merge_sort(int a[],int l,int r)
